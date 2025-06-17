@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kantin Sehat SMKN 22 Jakarta</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Font Style -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body id="body" class="bg-[#f9f9f9] text-[#2c3e50] font-sans transition-colors duration-300">
+
+  <!-- Tombol Mode Gelap di Kiri Atas -->
+  <div class="absolute top-4 left-4 z-50">
+    <button id="toggleMode" class="bg-[#0d4671] text-white px-3 py-1 rounded text-sm">🌙 Dark Mode</button>
+  </div>
+
+  <!-- Navbar -->
+<nav class="sticky top-0 bg-[#0d4671] text-white px-6 py-4 shadow-md z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="text-xl font-bold">SMKN 22 JAKARTA</div>
+    
+    <ul class="hidden md:flex space-x-6 items-center">
+      <li><a href="#Home" class="hover:text-[#92e1e2]">Home</a></li>
+      <li><a href="#About" class="hover:text-[#92e1e2]">About</a></li>
+  <!-- Dropdown: List Kantin -->
+  <li class="relative group">
+    <button class="hover:text-[#92e1e2] focus:outline-none">Kantin</button>
+    <ul class="absolute top-full left-0 bg-white text-[#2c3e50] mt-2 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-50 min-w-[160px]">
+      <li><a href="#kantin-1" class="block px-4 py-2 hover:bg-[#92e1e2]">Bisen</a></li>
+      <li><a href="#kantin-2" class="block px-4 py-2 hover:bg-[#92e1e2]">Kantin 2</a></li>
+      <li><a href="#kantin-3" class="block px-4 py-2 hover:bg-[#92e1e2]">Kantin 3</a></li>
+      <li><a href="#kantin-4" class="block px-4 py-2 hover:bg-[#92e1e2]">Kantin 4</a></li>
+      <li><a href="#kantin-5" class="block px-4 py-2 hover:bg-[#92e1e2]">Kantin 5</a></li>
+      <li><a href="#kantin-6" class="block px-4 py-2 hover:bg-[#92e1e2]">Kantin 6</a></li>
+      <li><a href="#kantin-7" class="block px-4 py-2 hover:bg-[#92e1e2]">Kantin 7</a></li>
+      <li><a href="#kantin-8" class="block px-4 py-2 hover:bg-[#92e1e2]">Kantin 8</a></li>
+    </ul>
+  </li>
+      <li><a href="#kontak" class="hover:text-[#92e1e2]">Kontak</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Header / Beranda -->
+<section id="Home" class="pt-20 pb-10 bg-gradient-to-b from-[#0d4671] to-[#92e1e2]" data-aos="fade-up">
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 gap-8">
+    <div class="md:w-1/2 text-left text-white" data-aos="fade-up">
+      <p class="italic text-4xl mb-6 mt-4" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Selamat Datang...</p>
+      <h2 class="text-4xl font-bold mt-4 whitespace-nowrap" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">WEBSITE KANTIN SMKN 22 JAKARTA</h2>
+      <h2 class="italic text-m mt-6" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">"Halal, Bersih, Sehat, dan Ceria"</h2>
+    </div>
+    <div class="md:w-1/2 flex justify-center mb-6 mb-8" data-aos="fade-up">
+      <img src="gambar/smkn-22-jakarta (1).png" alt="Logo Sekolah" class="object-contain w-2/3 sm:w-1/2 md:w-2/3 lg:w-1/2 shadow-lg rounded-xl transition-shadow duration-300 hover:shadow-2xl" />
+    </div>
+  </div>
+</section>
+
+<section id="About" class="bg-[#92e1e2] py-16 px-6 mb-10" data-aos="fade-up">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
+    <div class="w-full md:w-1/2 flex justify-center" data-aos="fade-up">
+      <img src="gambar/bu-odah2-e1655119619612.jpg" alt="Bu Odah"
+        class="object-contain w-2/3 sm:w-1/2 md:w-2/3 lg:w-1/2 shadow-lg rounded-xl transition-shadow duration-300 hover:shadow-2xl" />
+    </div>
+    <div class="w-full md:w-1/2 text-justify" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-[#0d4671] mb-4 text-center" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+        Tentang Kantin SMKN 22</h2>
+      <p class="text-gray-800 mb-4">
+        Kantin SMKN 22 Jakarta hadir untuk mendukung gaya hidup sehat dan aktif bagi seluruh warga sekolah.
+        Dengan menyediakan makanan dan minuman bergizi, higienis, dan terjangkau, kami berkomitmen untuk menjadi bagian penting
+        dalam membentuk generasi yang sehat dan berprestasi.
+      </p>
+      <p class="text-gray-800">
+        Dikelola oleh warga sekolah dengan penuh tanggung jawab, kantin kami juga menjadi sarana pembelajaran kewirausahaan, kedisiplinan, dan kepedulian terhadap lingkungan.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section id="kantin-1" class="bg-[#f9f9f9] py-16 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-[#0d4671] mb-4">Bisnis Center</h2>
+    <p class="text-md text-gray-700 mb-6">
+      Bisnis Center menyajikan berbagai pilihan makanan dan minuman. seperti nasi goreng, soto mie, dan mie ayam 
+      yang dimasak langsung oleh ibu kantin yang ramah dan berpengalaman. Rasa masakannya dikenal lezat dan terjangkau!
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Contoh produk -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex flex-col items-center">
+  <img src="gambar/ice krem.jpeg" alt="Es Krim" class="w-full h-32 object-cover rounded mb-2">
+  <h3 class="text-lg font-bold">Es Krim</h3>
+  <p class="text-sm text-gray-600">Es Krim rasa coklat</p>
+  <p class="mt-1 font-semibold">Rp 3.000</p>
+  <button onclick="addToCart(10)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+</div>
+
+
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <img src="gambar/kopken.jpg" alt="Kopi Kenangan" class="w-full h-32 object-cover rounded mb-2">
+        <h3 class="text-lg font-bold">Kopi Kenangan</h3>
+        <p class="text-sm text-gray-600">Kenangan bersama dia</p>
+        <p class="mt-1 font-semibold">Rp 6.000</p>
+        <button onclick="addToCart(11)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <img src="gambar/stik keju.jpeg" alt="Stik Keju" class="w-full h-32 object-cover rounded mb-2">
+        <h3 class="text-lg font-bold">Stik Keju</h3>
+        <p class="text-sm text-gray-600">Stik Keju yang gurih dan nikmat</p>
+        <p class="mt-1 font-semibold">Rp 5.000</p>
+        <button onclick="addToCart(12)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kantin-2" class="bg-[#92e1e2] py-16 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-[#0d4671] mb-4">Kantin 2</h2>
+    <p class="text-md text-gray-700 mb-6">
+      Kantin 2 menyajikan berbagai pilihan makanan dan minuman. seperti nasi goreng, soto mie, dan mie ayam 
+      yang dimasak langsung oleh ibu kantin yang ramah dan berpengalaman. Rasa masakannya dikenal lezat dan terjangkau!
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Contoh produk -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex flex-col items-center">
+  <img src="gambar/takoyaki.jpeg" alt="Takoyaki" class="w-full h-32 object-cover rounded mb-2">
+  <h3 class="text-lg font-bold">Takoyaki</h3>
+  <p class="text-sm text-gray-600">Takoyaki cita rasa jepang</p>
+  <p class="mt-1 font-semibold">Rp 5.000</p>
+  <button onclick="addToCart(13)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+</div>
+
+
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <img src="gambar/roti kukus.jpeg" alt="Roti Kukus" class="w-full h-32 object-cover rounded mb-2">
+        <h3 class="text-lg font-bold">Roti Kukus</h3>
+        <p class="text-sm text-gray-600">Roti Kukus enaknyo</p>
+        <p class="mt-1 font-semibold">Rp 6.000</p>
+        <button onclick="addToCart(14)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <img src="gambar/gabin tape.jpeg" alt="Gabin Tape" class="w-full h-32 object-cover rounded mb-2">
+        <h3 class="text-lg font-bold">Gabin Tape</h3>
+        <p class="text-sm text-gray-600">paduan biskuit dan tape pilihan</p>
+        <p class="mt-1 font-semibold">Rp 2.500</p>
+        <button onclick="addToCart(15)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kantin-3" class="bg-[#f9f9f9] py-16 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-[#0d4671] mb-4">Kantin 3</h2>
+    <p class="text-md text-gray-700 mb-6">
+      Bisnis Center menyajikan berbagai pilihan makanan dan minuman. seperti nasi goreng, soto mie, dan mie ayam 
+      yang dimasak langsung oleh ibu kantin yang ramah dan berpengalaman. Rasa masakannya dikenal lezat dan terjangkau!
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Contoh produk -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex flex-col items-center">
+  <img src="gambar/download.jpg" alt="Soto Mie" class="w-full h-32 object-cover rounded mb-2">
+  <h3 class="text-lg font-bold">Soto Mie</h3>
+  <p class="text-sm text-gray-600">Soto Mie cita rasa bogor</p>
+  <p class="mt-1 font-semibold">Rp 7.000</p>
+  <button onclick="addToCart(16)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+</div>
+
+
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <img src="gambar/nasi cokot.jpeg" alt="Nasi Cokot" class="w-full h-32 object-cover rounded mb-2">
+        <h3 class="text-lg font-bold">Nasi Cokot</h3>
+        <p class="text-sm text-gray-600">Nasi Cokot isi ayam</p>
+        <p class="mt-1 font-semibold">Rp 6.000</p>
+        <button onclick="addToCart(17)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <img src="gambar/lontong sayur.jpeg" alt="Lontong Sayur" class="w-full h-32 object-cover rounded mb-2">
+        <h3 class="text-lg font-bold">Lontong Sayur</h3>
+        <p class="text-sm text-gray-600">Lontong Sayur khas padang</p>
+        <p class="mt-1 font-semibold">Rp 8.000</p>
+        <button onclick="addToCart(18)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kantin-4" class="bg-[#92e1e2] py-16 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-[#0d4671] mb-4">Kantin 4</h2>
+    <p class="text-md text-gray-700 mb-6">
+      Bisnis Center menyajikan berbagai pilihan makanan dan minuman. seperti nasi goreng, soto mie, dan mie ayam 
+      yang dimasak langsung oleh ibu kantin yang ramah dan berpengalaman. Rasa masakannya dikenal lezat dan terjangkau!
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Contoh produk -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex flex-col items-center">
+  <img src="gambar/es teh.jpeg" alt="Teh Manis" class="w-full h-32 object-cover rounded mb-2">
+  <h3 class="text-lg font-bold">Es Teh</h3>
+  <p class="text-sm text-gray-600">Es Teh jawa</p>
+  <p class="mt-1 font-semibold">Rp 3.000</p>
+  <button onclick="addToCart(19)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+</div>
+
+
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <img src="gambar/es milo.jpeg" alt="Es Milo" class="w-full h-32 object-cover rounded mb-2">
+        <h3 class="text-lg font-bold">Es Milo</h3>
+        <p class="text-sm text-gray-600">Es Milo khas malaysia</p>
+        <p class="mt-1 font-semibold">Rp 4.000</p>
+        <button onclick="addToCart(20)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <img src="gambar/es thai tea.jpeg" alt="Es Thai Tea" class="w-full h-32 object-cover rounded mb-2">
+        <h3 class="text-lg font-bold">Es Thai Tea</h3>
+        <p class="text-sm text-gray-600">Es Thai Tea khas Thailand</p>
+        <p class="mt-1 font-semibold">Rp 4.000</p>
+        <button onclick="addToCart(21)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kantin-5" class="bg-[#f9f9f9] py-16 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-[#0d4671] mb-4">Kantin 5</h2>
+    <p class="text-md text-gray-700 mb-6">
+      Bisnis Center menyajikan berbagai pilihan makanan dan minuman. seperti nasi goreng, soto mie, dan mie ayam 
+      yang dimasak langsung oleh ibu kantin yang ramah dan berpengalaman. Rasa masakannya dikenal lezat dan terjangkau!
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Contoh produk -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex flex-col items-center">
+  <img src="gambar/Mie ayam.jpeg" alt="Teh Manis" class="w-full h-32 object-cover rounded mb-2">
+  <h3 class="text-lg font-bold">Mie Ayam</h3>
+  <p class="text-sm text-gray-600">Mie Ayam enak gurih</p>
+  <p class="mt-1 font-semibold">Rp 9.000</p>
+  <button onclick="addToCart(22)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+</div>
+
+
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <img src="gambar/nasi goreng.jpeg" alt="Mie Ayam" class="w-full h-32 object-cover rounded mb-2">
+        <h3 class="text-lg font-bold">Nasi Goreng</h3>
+        <p class="text-sm text-gray-600">Nasi Goreng sedap mantap</p>
+        <p class="mt-1 font-semibold">Rp 10.000</p>
+        <button onclick="addToCart(23)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <img src="gambar/indomie.jpeg" alt="Soto Mie" class="w-full h-32 object-cover rounded mb-2">
+        <h3 class="text-lg font-bold">Indomie Rebus</h3>
+        <p class="text-sm text-gray-600">Indomie, seleraku</p>
+        <p class="mt-1 font-semibold">Rp 7.000</p>
+        <button onclick="addToCart(24)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kantin-6" class="bg-[#92e1e2] py-16 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-[#0d4671] mb-4">Kantin 6</h2>
+    <p class="text-md text-gray-700 mb-6">
+      Bisnis Center menyajikan berbagai pilihan makanan dan minuman. seperti nasi goreng, soto mie, dan mie ayam 
+      yang dimasak langsung oleh ibu kantin yang ramah dan berpengalaman. Rasa masakannya dikenal lezat dan terjangkau!
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Contoh produk -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex flex-col items-center">
+  <img src="gambar/bakso.jpeg" alt="Teh Manis" class="w-full h-32 object-cover rounded mb-2">
+  <h3 class="text-lg font-bold">Bakso Kuah</h3>
+  <p class="text-sm text-gray-600">Bakso khas Wonogiri</p>
+  <p class="mt-1 font-semibold">Rp 8.000</p>
+  <button onclick="addToCart(25)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+</div>
+
+
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <img src="gambar/dimsum.jpeg" alt="Mie Ayam" class="w-full h-32 object-cover rounded mb-2">
+        <h3 class="text-lg font-bold">Dimsum</h3>
+        <p class="text-sm text-gray-600">Dimsum enak banget</p>
+        <p class="mt-1 font-semibold">Rp 5.000</p>
+        <button onclick="addToCart(26)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <img src="gambar/pangsit.jpeg" alt="Soto Mie" class="w-full h-32 object-cover rounded mb-2">
+        <h3 class="text-lg font-bold">Pangsit Kuah</h3>
+        <p class="text-sm text-gray-600">Asli cina</p>
+        <p class="mt-1 font-semibold">Rp 5.000</p>
+        <button onclick="addToCart(27)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kantin-7" class="bg-[#f9f9f9] py-16 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-[#0d4671] mb-4">Kantin 7</h2>
+    <p class="text-md text-gray-700 mb-6">
+      Bisnis Center menyajikan berbagai pilihan makanan dan minuman. seperti nasi goreng, soto mie, dan mie ayam 
+      yang dimasak langsung oleh ibu kantin yang ramah dan berpengalaman. Rasa masakannya dikenal lezat dan terjangkau!
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Contoh produk -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex flex-col items-center">
+  <img src="gambar/ayam geprek.jpeg" alt="Teh Manis" class="w-full h-32 object-cover rounded mb-2">
+  <h3 class="text-lg font-bold">ayam Geprek</h3>
+  <p class="text-sm text-gray-600">Ayam Geprek dengan sambal pedas</p>
+  <p class="mt-1 font-semibold">Rp 12.000</p>
+  <button onclick="addToCart(28)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+</div>
+
+
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <img src="gambar/risol mayo.jpeg" alt="Mie Ayam" class="w-full h-32 object-cover rounded mb-2">
+        <h3 class="text-lg font-bold">Risol Mayo</h3>
+        <p class="text-sm text-gray-600">Risol Mayo enakk</p>
+        <p class="mt-1 font-semibold">Rp 2.500</p>
+        <button onclick="addToCart(29)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <img src="gambar/sate.jpeg" alt="Soto Mie" class="w-full h-32 object-cover rounded mb-2">
+        <h3 class="text-lg font-bold">Sate-satean</h3>
+        <p class="text-sm text-gray-600">Kornet, dumpling, dan nugget</p>
+        <p class="mt-1 font-semibold">Rp 2.500</p>
+        <button onclick="addToCart(30)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kantin-8" class="bg-[#92e1e2] py-16 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-[#0d4671] mb-4">Kantin 8</h2>
+    <p class="text-md text-gray-700 mb-6">
+      Bisnis Center menyajikan berbagai pilihan makanan dan minuman. seperti nasi goreng, soto mie, dan mie ayam 
+      yang dimasak langsung oleh ibu kantin yang ramah dan berpengalaman. Rasa masakannya dikenal lezat dan terjangkau!
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Contoh produk -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex flex-col items-center">
+  <img src="gambar/seblak.jpg" alt="Teh Manis" class="w-full h-32 object-cover rounded mb-2">
+  <h3 class="text-lg font-bold">Seblak</h3>
+  <p class="text-sm text-gray-600">Seblak khas bandung</p>
+  <p class="mt-1 font-semibold">Rp 5.000</p>
+  <button onclick="addToCart(31)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+</div>
+
+
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <img src="gambar/kebab-sosis.jpg" alt="Mie Ayam" class="w-full h-32 object-cover rounded mb-2">
+        <h3 class="text-lg font-bold">Kebab</h3>
+        <p class="text-sm text-gray-600">Kebab rasa turki</p>
+        <p class="mt-1 font-semibold">Rp 5.000</p>
+        <button onclick="addToCart(32)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <img src="gambar/gorengan.jpg" alt="Soto Mie" class="w-full h-32 object-cover rounded mb-2">
+        <h3 class="text-lg font-bold">Gorengan</h3>
+        <p class="text-sm text-gray-600">Bakwam, tempe, tahu</p>
+        <p class="mt-1 font-semibold">Rp 1.000</p>
+        <button onclick="addToCart(33)" class="mt-2 bg-[#0d4671] text-white px-4 py-1 rounded">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Keranjang -->
+  <section class="fixed bottom-0 left-0 right-0 bg-[#92e1e2] border-t p-4 shadow-inner z-50">
+    <div class="flex justify-between items-center flex-wrap gap-3">
+      <div>
+        <p class="font-semibold">🛒 Total: <span id="cart-total">Rp 0</span></p>
+        <p class="text-sm" id="cart-items">0 item</p>
+      </div>
+      <div class="flex gap-2 items-center">
+        <select id="payment-method" class="p-2 rounded border text-[#2c3e50]">
+          <option value="COD">COD</option>
+          <option value="QRIS">QRIS</option>
+        </select>
+        <button onclick="checkout()" class="bg-[#0d4671] text-white px-4 py-2 rounded">Checkout</button>
+      </div>
+    </div>
+  </section>
+
+<section id="kontak" class="bg-[#f9f9f9] py-16 px-6 text-center">
+  <div class="max-w-3xl mx-auto">
+
+    <h2 class="text-3xl font-bold text-[#0d4671]  mt-2 mb-6">Kontak Kami</h2>
+
+    <p class="text-gray-800 mb-4">
+      Jika kamu memiliki pertanyaan, saran, atau ingin bekerja sama, silakan hubungi kami melalui kontak berikut:
+    </p>
+
+    <div class="text-gray-800 space-y-3">
+      <p><strong>📍 Alamat:</strong> SMKN 22 Jakarta, Jl. Raya Condet, Gedong, Kec. Ps. Rebo, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13760</p>
+      <p><strong>📞 Telepon:</strong> (021) 470-1234</p>
+      <p><strong>📱 WhatsApp:</strong> <a href="https://wa.me/6285810574301" target="_blank" class="text-blue-600 underline">0858-1057-4301</a></p>
+      <p><strong>✉️ Email:</strong> <a href="mailto:kantin@smkn22.sch.id" class="text-blue-600 underline">kantin@smkn22.sch.id</a></p>
+    </div>
+  </div>
+</section>
+
+  <footer class="bg-[#2c3e50] text-white py-8 mt-16 text-center">
+  <div class="max-w-4xl mx-auto px-6 space-y-4">
+
+    <!-- Judul Footer -->
+    <h4 class="text-lg font-semibold">Kantin SMKN 22 Jakarta</h4>
+    <p class="text-sm text-gray-300">
+      Menyajikan makanan sehat, bergizi, dan terjangkau untuk seluruh warga sekolah.
+    </p>
+    <!-- Hak Cipta -->
+    <p class="text-xs text-gray-400 mt-6">&copy; 2025 Kantin SMKN 22 Jakarta. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Script -->
+  <script>
+    const productList = [
+      { id: 10, name: "Es Krim", category: "Minuman", price: 3000, desc: "Es Krim rasa coklat", img: "https://placehold.co/150x150?text=Teh+Manis" },
+      { id: 11, name: "Kopi Kenangan", category: "Minuman", price: 6000, desc: "Soda dingin berbagai rasa", img: "https://placehold.co/150x150?text=Soda" },
+      { id: 12, name: "Stik Keju", category: "Minuman", price: 5000, desc: "Kopi hitam panas khas kantin", img: "https://placehold.co/150x150?text=Kopi" },
+      { id: 13, name: "Es Krim", category: "Snack", price: 6000, desc: "Es krim coklat, vanila, dan stroberi", img: "https://placehold.co/150x150?text=Es+Krim" },
+      { id: 14, name: "Snack Ringan", category: "Snack", price: 3000, desc: "Snack ringan dan kekinian", img: "https://placehold.co/150x150?text=Snack" },
+
+    ];
+
+    let cart = [];
+    let currentCategory = 'All';
+
+    const rupiah = num => 'Rp ' + num.toLocaleString('id-ID');
+
+    function addToCart(id) {
+      const product = productList.find(p => p.id === id);
+      cart.push(product);
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const total = cart.reduce((sum, p) => sum + p.price, 0);
+      document.getElementById('cart-total').textContent = rupiah(total);
+      document.getElementById('cart-items').textContent = `${cart.length} item`;
+    }
+
+    function checkout() {
+      if (cart.length === 0) return alert("Keranjang kosong, isi dulu yuk!");
+
+      const payment = document.getElementById('payment-method').value;
+      const total = cart.reduce((sum, p) => sum + p.price, 0);
+      const list = cart.map(p => `- ${p.name} (${rupiah(p.price)})`).join('%0A');
+      const message = `Halo, saya ingin pesan makanan:%0A${list}%0ATotal: ${rupiah(total)}%0AMetode: ${payment}`;
+      const waURL = `https://wa.me/6285810574301?text=${message}`;
+      window.open(waURL, '_blank');
+    }
+
+    function loadProducts() {
+      const container = document.getElementById('products');
+      const filtered = currentCategory === 'All'
+        ? productList
+        : productList.filter(p => p.category === currentCategory);
+      container.innerHTML = filtered.map(p => `
+        <div class="bg-white dark:bg-[#333] rounded-xl shadow-md p-4 flex flex-col items-center transition-colors">
+          <img src="${p.img}" alt="${p.name}" class="w-32 h-32 object-cover rounded-md mb-2"/>
+          <h3 class="text-lg font-bold text-center">${p.name}</h3>
+          <p class="text-sm text-center">${p.desc}</p>
+          <p class="mt-1 font-semibold">${rupiah(p.price)}</p>
+          <button onclick="addToCart(${p.id})" class="mt-2 bg-[#2c3e50] text-white px-3 py-1 rounded">Add to Cart</button>
+        </div>
+      `).join('');
+    }
+
+    function filterCategory(cat) {
+      currentCategory = cat;
+      loadProducts();
+    }
+
+    // Mode Terang/Gelap
+    document.getElementById("toggleMode").addEventListener("click", () => {
+      const body = document.getElementById("body");
+      const isDark = body.classList.toggle("bg-[#1a1a1a]");
+      body.classList.toggle("text-white");
+      document.getElementById("toggleMode").textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
+    });
+
+    loadProducts();
+  </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // durasi animasi (ms)
+    once: true      // animasi hanya terjadi sekali
+  });
+</script>
+
+</body>
+</html>
